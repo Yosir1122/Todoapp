@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InfoActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#D93BC9"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="Todo 1"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Todo Description"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/imgSpinner"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/red_flag" />
+
+        <TextView
+            android:id="@+id/tvSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="15dp"
+            android:text="Urget"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Todo create data"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvdedline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Todo dedline"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp">
+
+        <RadioButton
+            android:id="@+id/radioOpen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioDevelopment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Development"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioUploading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uploading"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioReject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reject"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioClosed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Closed"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="30dp"
+        android:backgroundTint="#D93BC9"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Ok"
+        android:id="@+id/btn_ok"
+        android:textSize="20sp"
+        app:cornerRadius="10dp" />
+
+
+</LinearLayout>
